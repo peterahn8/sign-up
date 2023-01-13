@@ -107,8 +107,8 @@ body {
     margin-bottom: 5vh;
 }
 
-.inputWrapper > label {
-    font-size: calc(4px + 2vw);
+.inputWrapper * {
+    font-size: calc(12px + .2vw);
 }
 
 .inputWrapper > input {
