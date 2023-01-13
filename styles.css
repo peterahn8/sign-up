@@ -40,18 +40,26 @@ a {
 }
 
 .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 30%;
     font-family: Norse-Bold;
     background-color: rgba(0, 0, 0, 0.385);
     color: white;
-    width: 100%;
-    margin-top: 35%;
-    font-size: 150px;
+    font-size: 100px;
+}
+
+.logo > img {
+    width: 20%;
+    padding: 10px;
 }
 
 .footer {
     margin-top: auto;
-    color: white;
     margin-bottom: 20px;
+    color: white;
     text-shadow: 1px 1px 2px black;
 }
 
