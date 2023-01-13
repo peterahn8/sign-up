@@ -141,10 +141,10 @@ body {
     background-color: #758f5e;
 }
 
-.error {
-    background-color: red;
+input:invalid {
+    border: 2px solid rgba(255, 0, 0, 0.5);
 }
 
-input:invalid {
+input:invalid:focus {
     border: 2px solid rgba(255, 0, 0, 0.5);
 }
