@@ -43,8 +43,8 @@
 
                 <div class="forms">
 
-                    <form action="">
-                        
+                    <form id="form" action="">
+
                         <div class="row">
                             <div class="inputWrapper">
                                 <label for="firstName">First Name</label><br>
@@ -70,11 +70,11 @@
                         <div class="row">
                             <div class="inputWrapper">
                                 <label for="password">Password</label><br>
-                                <input type="password" id="password">
+                                <input minlength="6" maxlength="20" type="password" id="password">
                             </div>
                             <div class="inputWrapper">
                                 <label for="passwordConfirm">Confirm Password</label><br>
-                                <input type="password" id="passwordConfirm">
+                                <input minlength="6" maxlength="20" type="password" id="passwordConfirm">
                             </div>
                         </div>
 
@@ -85,8 +85,8 @@
 
             </div>
 
-            <div class="submit">
-                <button>Create Account</button>
+            <div class="submission">
+                <input type="submit" form="form" value="Create Account">
                 <div class="login">Already have an account? <a href="">Log in</a></div>
             </div>
 

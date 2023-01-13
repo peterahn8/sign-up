@@ -90,24 +90,61 @@ body {
     flex-direction: column;
     padding: 2% 5%;
     background-color: white;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.08);
 }
 
 .row {
     display: flex;
     flex-direction: row;
-    gap: 20%;
+    gap: 10%;
     margin-bottom: 2%;
 }
 
 .inputWrapper > input {
     border: 2px solid #E5E7EB;
+    border-radius: 5px;
+    width: 12vw;
+    height: 3vh;
 }
 
-.submit {
-    margin: 2% 5%;
+.inputWrapper > input:focus {
+    border: 2px solid rgba(52, 105, 174, 0.586);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    outline: none;
 }
 
-.submit > button {
-    margin-bottom: 2%;
+.submission {
+    margin: 5% 5%;
+}
+
+.submission > .login > a {
+    color: #596D48;
+    text-decoration: none;
+}
+
+.submission > input {
+    margin-bottom: 3%;
     background-color: #596D48;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    color: white;
+    font-weight: bolder;
+}
+
+.submission > input:hover {
+    background-color: #6c8456;
+    cursor: pointer;
+}
+
+.submission > input:active {
+    background-color: #758f5e;
+}
+
+.error {
+    background-color: red;
+}
+
+input:invalid {
+    border: 2px solid rgba(255, 0, 0, 0.5);
 }
